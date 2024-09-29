@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Meta tags -->
+  <meta name="title" content="SongifyUp">
+  <meta name="description" content="Tu Musica Favorita
+  Al alcance de un click 
+  Registra tus canciones favoritas, reprodúcelas en cualquier momento Explorar nuestro catálogo de música, 
+  personalizar tu experiencia y administrar tus canciones favoritas, asegurando que siempre tengas acceso a tus melodías preferidas.">
+   
+   <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/sicon.jpg" type="image/x-icon"/>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material" rel="stylesheet">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,-25" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- libreria swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/script.js"></script>
+  <title>SongifyUp</title>
+</head>
+<body>
+
+   <!-- MENU ENCABEZADO -->
+  <div class="container-header" data-header>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-layer-group fa-rotate-180"></i>
+            <h2>SongifyUp</h2>
+        </div>
+        <nav id="nav">
+          <ul>
+             <li><a href="#table" onclick="seleccionar()">REGISTRO</a></li>
+             <li><a href="table.html" onclick="seleccionar()">ADMINISTRACIÓN</a></li>
+             <li><a href="#footer" onclick="seleccionar()">CONTACTO</a></li>
+
+            <div class="networks">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            
+        </ul>
+        <div class="close-btn" onclick="closeMenu()">(✖)</div>
+       
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </header>
+  </div>
+
+
+<!-- Secciòn INICIO -->
+<span class="shadow">
+  <section id="start" class="start">
+      <div class="content-section">
+        <div class="row">
+          <div class="col">
+              <h2>Tu Musica Favorita</h2>
+              <h3>Al alcance de un click !</h3>
+              <p>Registra tus canciones favoritas, reprodúcelas en cualquier momento Explorar nuestro catálogo de música, personalizar tu experiencia y administrar tus canciones favoritas, asegurando que siempre tengas acceso a tus melodías preferidas.</p>
+              <a href="#player">
+              <button class="btn btn-1">Mi playlist</button></a>
+          </div>
+          <div class="col">
+              <div class="container-img">
+                  <img src="assets/images/foto-inicio.webp" alt="slider pc">
+              </div>
+          </div>
+      </div>
+      
+      </div>
+  </section>
+  <div class="shape-bottom wave">
+    <svg
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <defs>
+        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#030408; stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#007ae5c4; stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"
+        fill="url(#waveGradient)"
+      ></path>
+    </svg>
+</div>
+</span>
+
+
+
+  <!-- TABLA DE REGISTRO  -->
+  <section id="table" class="table">
+    <div class="content-section">
+    <div class="formbold-main-wrapper">
+      <h1>Registra tus canciones</h1>
+        <div class="formbold-form-wrapper">
+          <form autocomplete="off">
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="song"
+                    id="song"
+                    placeholder="Nombre"
+                    class="formbold-form-input"
+                    />
+                    <label for="song" class="formbold-form-label"> Canción </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="artist"
+                    id="artist"
+                    placeholder="John"
+                    class="formbold-form-input"
+                    />
+                    <label for="artist" class="formbold-form-label"> Artista </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="gender"
+                    id="gender"
+                    placeholder="Rock"
+                    class="formbold-form-input"
+                    />
+                    <label for="gender" class="formbold-form-label"> Género </label>
+                </div>
+              </div>
+              <div class="buttons-music">
+                <button class="formbold-btn" id="btregistrar">
+                  Registrar
+                </button>
+                <a href="table.html" rel="noopener noreferrer" class="administrar" aria-label="administrar">Administrar</a>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+
+  <!-- Musica Sección  -->
+  <section id="player" class="player">
+  <div class="content-section">
+    <h1 class="title">My playlist</h1>
+  <div class="album-cover">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="assets/images/Wizkhalifa.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=RgKAFK5djSk"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/theweekend.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=fHI8X4OXluQ"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/liverpol2.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=OV5_LQArLa0"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/deadpool.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=79fzeNUqQbQ"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/hoovestank.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=fV4DiAyExN0"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/wolves.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=dW8PRY4KiGU"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/images/Napoleon.webp" />
+          <div class="overlay">
+            <a
+              href="https://www.youtube.com/watch?v=_jRZQ1KgAwg"
+              target="_blank" rel="noopener noreferrer"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="music-player">
+    <h1>Title</h1>
+    <p>Song Name</p>
+    <audio id="audio">
+    </audio>
+    <input type="range" value="0" id="progress"  />
+
+    <div class="controls">
+      
+      <button class="btn-icon toggle" id="repeat-btn">
+        <span class="material-symbols-rounded default-icon">repeat</span>
+        <span class="material-symbols-rounded active-icon" style="display: none;">repeat_one</span>
+      </button>
+
+      <button class="backward">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+
+      <button class="play-pause-btn">
+        <i class="fa-solid fa-play" id="controlIcon"></i>
+      </button>
+
+      <button class="forward">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+      
+      <button class="btn-icon toggle" id="shuffle-btn">
+        <span class="material-symbols-rounded">shuffle</span>
+      </button>
+    
+    </div>
+
+    <div class="controls">
+    <button class="btn-icon" id="volume-btn">
+      <span class="material-symbols-rounded">volume_up</span>
+      </button>
+      <input type="range" value="1" id="volume" min="0" max="1" step="0.01" />
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <footer>
+    <section id="footer">
+    <div class="footer-bottom">
+        <p>
+          &copy; 2024 <a href="#">SongifyUp v1.0.0</a> By Emanuel Reyes  Fuentes ⌘ | Connect whit me
+        </p>
+    </div>
+  </section>
+</footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Muestre iconos youtube y sea soportado js  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta tags -->
+  <meta name="title" content="SongifyUp">
+  <meta name="description" content="Tu Musica Favorita 
+   Al alcance de un click 
+   Registra tus canciones favoritas, reprodúcelas en cualquier momento Explorar nuestro catálogo de música, 
+   personalizar tu experiencia y administrar tus canciones favoritas, asegurando que siempre tengas acceso a tus melodías preferidas.">
+  
+   <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/sicon.jpg" type="image/x-icon"/>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <link rel="stylesheet" href="assets/css/table.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/table.js"></script>
+  <title>Adminsitración Musica</title>
+</head>
+<body>
+  <!-- MENU ENCABEZADO -->
+  <div class="container-header" data-header>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-layer-group fa-rotate-180"></i>
+            <h2>SongifyUp</h2>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html" onclick="seleccionar()">REGISTRO</a></li>
+            <li><a href="#table" onclick="seleccionar()">ADMINISTRACIÓN</a></li>
+            <li><a href="#footer" onclick="seleccionar()">CONTACTO</a></li>
+
+            <div class="redes">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </ul>
+        <div class="close-btn" onclick="closeMenu()">(✖)</div>
+       
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+    </header>
+  </div>
+
+    <!-- TABLA -->
+    <section id="table" class="table">
+      <div class="content-section">
+    <table id="tables">
+        <thead>
+          <tr>
+            <th colspan="6">Administra tu musica</th>
+          </tr>
+          <tr>
+            <th>#</th>
+            <th>Canción</th>
+            <th>Artista</th>
+            <th>Género</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div id="form">
+      <h1>Modifica tus Canciones</h1>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form autocomplete="off">
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="song"
+                    id="song"
+                    placeholder="Nombre canción"
+                    class="formbold-form-input"
+                    />
+                    <label for="song" class="formbold-form-label"> Canción </label>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    name="artist"
+                    id="artist"
+                    placeholder="John"
+                    class="formbold-form-input"
+                    />
+                    <label for="artist" class="formbold-form-label"> Artista </label>
+                </div>
+              </div>
+      
+              <div class="formbold-input-flex">
+                <div>
+                    <input
+                    type="text"
+                    name="gender"
+                    id="gender"
+                    placeholder="Rock"
+                    class="formbold-form-input"
+                    />
+                    <label for="gender" class="formbold-form-label"> Género </label>
+                </div>
+              </div>
+      
+              <button class="formbold-btn" id="btnModificar">
+                  Modificar Canción
+              </button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <section id="footer">
+    <div class="footer-bottom">
+        <p>
+          &copy; 2024 <a href="#">SongifyUp v1.0.0</a> By Emanuel Reyes  ⌘ | Connect whit me 
+        </p>
+    </div>
+  </section>
+</footer>
+</body>
+</html>
